@@ -1,0 +1,57 @@
+<?xml version="1.0"?>
+<BCPFORMAT xmlns="http://schemas.microsoft.com/sqlserver/2004/bulkload/format" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+ <RECORD>
+  <FIELD ID="1" xsi:type="CharFixed" LENGTH="9" COLLATION="SQL_Latin1_General_CP1_CI_AS"/>
+  <FIELD ID="2" xsi:type="CharFixed" LENGTH="9" COLLATION="SQL_Latin1_General_CP1_CI_AS"/>
+  <FIELD ID="3" xsi:type="CharFixed" LENGTH="9" COLLATION="SQL_Latin1_General_CP1_CI_AS"/>
+  <FIELD ID="4" xsi:type="CharFixed" LENGTH="12" COLLATION="SQL_Latin1_General_CP1_CI_AS"/>
+  <FIELD ID="5" xsi:type="CharFixed" LENGTH="8" COLLATION="SQL_Latin1_General_CP1_CI_AS"/>
+  <FIELD ID="6" xsi:type="CharFixed" LENGTH="1" COLLATION="SQL_Latin1_General_CP1_CI_AS"/>
+  <FIELD ID="7" xsi:type="CharFixed" LENGTH="15" COLLATION="SQL_Latin1_General_CP1_CI_AS"/>
+  <FIELD ID="8" xsi:type="CharFixed" LENGTH="25" COLLATION="SQL_Latin1_General_CP1_CI_AS"/>
+  <FIELD ID="9" xsi:type="CharFixed" LENGTH="1" COLLATION="SQL_Latin1_General_CP1_CI_AS"/>
+  <FIELD ID="10" xsi:type="CharFixed" LENGTH="40" COLLATION="SQL_Latin1_General_CP1_CI_AS"/>
+  <FIELD ID="11" xsi:type="CharFixed" LENGTH="40" COLLATION="SQL_Latin1_General_CP1_CI_AS"/>
+  <FIELD ID="12" xsi:type="CharFixed" LENGTH="25" COLLATION="SQL_Latin1_General_CP1_CI_AS"/>
+  <FIELD ID="13" xsi:type="CharFixed" LENGTH="2" COLLATION="SQL_Latin1_General_CP1_CI_AS"/>
+  <FIELD ID="14" xsi:type="CharFixed" LENGTH="5" COLLATION="SQL_Latin1_General_CP1_CI_AS"/>
+  <FIELD ID="15" xsi:type="CharFixed" LENGTH="4" COLLATION="SQL_Latin1_General_CP1_CI_AS"/>
+  <FIELD ID="16" xsi:type="CharFixed" LENGTH="2" COLLATION="SQL_Latin1_General_CP1_CI_AS"/>
+  <FIELD ID="17" xsi:type="CharFixed" LENGTH="2" COLLATION="SQL_Latin1_General_CP1_CI_AS"/>
+  <FIELD ID="18" xsi:type="CharFixed" LENGTH="1" COLLATION="SQL_Latin1_General_CP1_CI_AS"/>
+  <FIELD ID="19" xsi:type="CharFixed" LENGTH="1" COLLATION="SQL_Latin1_General_CP1_CI_AS"/>
+  <FIELD ID="20" xsi:type="CharFixed" LENGTH="1" COLLATION="SQL_Latin1_General_CP1_CI_AS"/>
+  <FIELD ID="21" xsi:type="CharFixed" LENGTH="2" COLLATION="SQL_Latin1_General_CP1_CI_AS"/>
+  <FIELD ID="22" xsi:type="CharFixed" LENGTH="8" COLLATION="SQL_Latin1_General_CP1_CI_AS"/>
+  <FIELD ID="23" xsi:type="CharFixed" LENGTH="8" COLLATION="SQL_Latin1_General_CP1_CI_AS"/>
+  <FIELD ID="24" xsi:type="CharFixed" LENGTH="1" COLLATION="SQL_Latin1_General_CP1_CI_AS"/>
+  <FIELD ID="25" xsi:type="CharTerm" TERMINATOR="\n" COLLATION="SQL_Latin1_General_CP1_CI_AS"/>
+ </RECORD>
+ <ROW>
+  <COLUMN SOURCE="1" NAME="Patient_Control_Number" xsi:type="SQLVARYCHAR"/>
+  <COLUMN SOURCE="2" NAME="Case_Number" xsi:type="SQLVARYCHAR"/>
+  <COLUMN SOURCE="3" NAME="Social_Security_Number" xsi:type="SQLVARYCHAR"/>
+  <COLUMN SOURCE="4" NAME="Medicare_HIC_Number" xsi:type="SQLVARYCHAR"/>
+  <COLUMN SOURCE="5" NAME="Birth_Date" xsi:type="SQLVARYCHAR"/>
+  <COLUMN SOURCE="6" NAME="Sex_Code" xsi:type="SQLVARYCHAR"/>
+  <COLUMN SOURCE="7" NAME="First_Name" xsi:type="SQLVARYCHAR"/>
+  <COLUMN SOURCE="8" NAME="Last_Name" xsi:type="SQLVARYCHAR"/>
+  <COLUMN SOURCE="9" NAME="Middle_Initial" xsi:type="SQLVARYCHAR"/>
+  <COLUMN SOURCE="10" NAME="Current_Street_Address_1" xsi:type="SQLVARYCHAR"/>
+  <COLUMN SOURCE="11" NAME="Current_Street_Address_2" xsi:type="SQLVARYCHAR"/>
+  <COLUMN SOURCE="12" NAME="Current_City_Name" xsi:type="SQLVARYCHAR"/>
+  <COLUMN SOURCE="13" NAME="Current_State_Code" xsi:type="SQLVARYCHAR"/>
+  <COLUMN SOURCE="14" NAME="Current_Zip_Code" xsi:type="SQLVARYCHAR"/>
+  <COLUMN SOURCE="15" NAME="Current_Zip_Extension" xsi:type="SQLVARYCHAR"/>
+  <COLUMN SOURCE="16" NAME="Number_of_Eligibility_Segments" xsi:type="SQLVARYCHAR"/>
+  <COLUMN SOURCE="17" NAME="Number_of_Medicare_Segments" xsi:type="SQLVARYCHAR"/>
+  <COLUMN SOURCE="18" NAME="Category_of_Assistance_Code" xsi:type="SQLVARYCHAR"/>
+  <COLUMN SOURCE="19" NAME="Client_Federal_Money_Code" xsi:type="SQLVARYCHAR"/>
+  <COLUMN SOURCE="20" NAME="Type_Program_Code" xsi:type="SQLVARYCHAR"/>
+  <COLUMN SOURCE="21" NAME="Effective_Date" xsi:type="SQLVARYCHAR"/>
+  <COLUMN SOURCE="22" NAME="Termination_Date" xsi:type="SQLVARYCHAR"/>
+  <COLUMN SOURCE="23" NAME="Medicare_Buyin_Type" xsi:type="SQLVARYCHAR"/>
+  <COLUMN SOURCE="24" NAME="Medicare_Buyin_Effective_Date" xsi:type="SQLVARYCHAR"/>
+  <COLUMN SOURCE="25" NAME="Medicare_Buyin_Terminate_Date" xsi:type="SQLVARYCHAR"/>
+ </ROW>
+</BCPFORMAT>

@@ -1,0 +1,50 @@
+{
+    "inputs": {
+        "input": {
+            "delimiter": ",",
+            "format": "csv",
+            "header": false
+        }
+    },
+    "outputs": {
+        "output": {
+            "emptyValue": "",
+            "format": "csv",
+            "handler": "helper.dtu_custom_output_dataframe_handler.CustomOutputHandler",
+            "lineSep": "\r\n",
+            "num_partitions": 1,
+            "overwrite": true,
+            "quoteAll": false,
+            "sep": "\t"
+        }
+    },
+    "rules": {
+        "rename": {
+            "_c0": "source_field",
+            "_c1": "Group_Number",
+            "_c10": "Policyholder_Zip_Code",
+            "_c11": "Policyholder_Zip_2",
+            "_c12": "Policyholder_Date_of_Birth",
+            "_c13": "Policyholder_SSN",
+            "_c14": "Policyholder_Sex",
+            "_c15": "Type_of_Coverage",
+            "_c16": "Policyholder_Effective_Date",
+            "_c17": "Policyholder_Termination_Date",
+            "_c18": "Relationship_Code",
+            "_c19": "Dependent_Name",
+            "_c2": "Division_Number",
+            "_c20": "Dependent_Date_of_Birth",
+            "_c21": "Dependent_SSN",
+            "_c22": "Dependent_Sex",
+            "_c23": "Dependent_Effective_Date",
+            "_c24": "Dependent_Termination_Date",
+            "_c3": "Employee_Certificate_Number",
+            "_c4": "Company_Name",
+            "_c5": "Policyholder_Name",
+            "_c6": "Policyholder_Address",
+            "_c7": "Policyholder_Address_2",
+            "_c8": "Policyholder_City",
+            "_c9": "Policyholder_State"
+        }
+    }
+}

@@ -1,0 +1,271 @@
+inputs:
+  input:
+    delimiter: ','
+    format: csv
+    header: false
+outputs:
+  output:
+    handler: helper.dtu_custom_output_dataframe_handler.CustomOutputHandler
+    format: csv
+    sep: "\t"
+    emptyValue: ''
+    overwrite: true
+    quoteAll: false
+    num_partitions: 1
+    lineSep: "\r\n"
+    schema:
+    - field: File_Name
+      type: string
+      nullable: false
+    - field: Source_Type
+      type: string
+      nullable: false
+    - field: Network_Name
+      type: string
+      nullable: false
+    - field: PolicyHolder_ID
+      type: string
+      nullable: false
+    - field: PolicyHolder_ALT_ID
+      type: string
+      nullable: false
+    - field: PolicyHolder_Last_Name
+      type: string
+      nullable: false
+    - field: PolicyHolder_First_Name
+      type: string
+      nullable: false
+    - field: PolicyHolder_Middle_Name
+      type: string
+      nullable: false
+    - field: PolicyHolder_Birth_Date
+      type: string
+      nullable: false
+    - field: PolicyHolder_Date_of_Death
+      type: string
+      nullable: false
+    - field: PolicyHolder_SSN
+      type: string
+      nullable: false
+    - field: PolicyHolder_Medicare_HIC
+      type: string
+      nullable: false
+    - field: PolicyHolder_Sex
+      type: string
+      nullable: false
+    - field: PolicyHolder_Address_1
+      type: string
+      nullable: false
+    - field: PolicyHolder_Address_2
+      type: string
+      nullable: false
+    - field: PolicyHolder_City
+      type: string
+      nullable: false
+    - field: PolicyHolder_State
+      type: string
+      nullable: false
+    - field: PolicyHolder_Zip
+      type: string
+      nullable: false
+    - field: PolicyHolder_Phone_Number
+      type: string
+      nullable: false
+    - field: PolicyHolder_Employer_Name
+      type: string
+      nullable: false
+    - field: PolicyHolder_Employer_Address_1
+      type: string
+      nullable: false
+    - field: PolicyHolder_Employer_Address_2
+      type: string
+      nullable: false
+    - field: PolicyHolder_Employer_City
+      type: string
+      nullable: false
+    - field: PolicyHolder_Employer_State
+      type: string
+      nullable: false
+    - field: PolicyHolder_Employer_Zip
+      type: string
+      nullable: false
+    - field: PolicyHolder_Employer_Contact_Name
+      type: string
+      nullable: false
+    - field: PolicyHolder_Employer_Contact_Phone
+      type: string
+      nullable: false
+    - field: Member_ID
+      type: string
+      nullable: false
+    - field: Member_ALT_ID
+      type: string
+      nullable: false
+    - field: Member_Last_Name
+      type: string
+      nullable: false
+    - field: Member_First_Name
+      type: string
+      nullable: false
+    - field: Member_Middle_Name
+      type: string
+      nullable: false
+    - field: Member_Birth_Date
+      type: string
+      nullable: false
+    - field: Member_Date_of_Death
+      type: string
+      nullable: false
+    - field: Member_SSN
+      type: string
+      nullable: false
+    - field: Member_Medicare_HIC
+      type: string
+      nullable: false
+    - field: Member_Sex
+      type: string
+      nullable: false
+    - field: Member_Relationship_to_Subscriber
+      type: string
+      nullable: false
+    - field: Member_Address_1
+      type: string
+      nullable: false
+    - field: Member_Address_2
+      type: string
+      nullable: false
+    - field: Member_City
+      type: string
+      nullable: false
+    - field: Member_County
+      type: string
+      nullable: false
+    - field: Member_State
+      type: string
+      nullable: false
+    - field: Member_Zip
+      type: string
+      nullable: false
+    - field: Member_Payer_Name
+      type: string
+      nullable: false
+    - field: Member_Payer_Product
+      type: string
+      nullable: false
+    - field: Medical_Policy_ID_Number
+      type: string
+      nullable: false
+    - field: Group_Number
+      type: string
+      nullable: false
+    - field: Subgroup_Number
+      type: string
+      nullable: false
+    - field: Group_Name
+      type: string
+      nullable: false
+    - field: Group_Description
+      type: string
+      nullable: false
+    - field: Effective_Date
+      type: string
+      nullable: false
+    - field: Termination_Date
+      type: string
+      nullable: false
+    - field: Coverage_Code_Basis
+      type: string
+      nullable: false
+    - field: Medical_Coverage_Indicator
+      type: string
+      nullable: false
+    - field: Pharmacy_Coverage_Indicator
+      type: string
+      nullable: false
+    - field: Dental_Coverage_Indicator
+      type: string
+      nullable: false
+    - field: Vision_Coverage_Indicator
+      type: string
+      nullable: false
+    - field: PBM_Name
+      type: string
+      nullable: false
+    - field: PBM_Cardholder_ID
+      type: string
+      nullable: false
+    - field: PBM_Person_Code
+      type: string
+      nullable: false
+    - field: PBM_Help_Desk_Phone_Number
+      type: string
+      nullable: false
+    - field: PBM_BIN
+      type: string
+      nullable: false
+    - field: PBM_PCN
+      type: string
+      nullable: false
+    - field: Vision_Name
+      type: string
+      nullable: false
+    - field: Vision_Policy_ID_Number
+      type: string
+      nullable: false
+    - field: Dental_Name
+      type: string
+      nullable: false
+    - field: Dental_Policy_ID_Number
+      type: string
+      nullable: false
+    - field: Plan_Type
+      type: string
+      nullable: false
+    - field: PlanTypeBasis
+      type: string
+      nullable: false
+    - field: Submitter_Field
+      type: string
+      nullable: false
+    - field: LOB
+      type: string
+      nullable: false
+    - field: DivisionCode
+      type: string
+      nullable: false
+    - field: AUX1
+      type: string
+      nullable: false
+    - field: AUX2
+      type: string
+      nullable: false
+    - field: AUX3
+      type: string
+      nullable: false
+rules:
+- rename:
+    _c0: source_field
+    _c1: Group_Number
+    _c2: Division_Number
+    _c3: Employee_Certificate_Number
+    _c4: Company_Name
+    _c5: Policyholder_Name
+    _c6: Policyholder_Address
+    _c7: Policyholder_Address_2
+    _c8: Policyholder_City
+    _c9: Policyholder_State
+    _c10: Policyholder_Zip_Code
+    _c11: Policyholder_Zip_2
+    _c12: Policyholder_Date_of_Birth
+    _c13: Policyholder_SSN
+    _c14: Policyholder_Sex
+    _c15: Type_of_Coverage
+    _c16: Policyholder_Effective_Date
+    _c17: Policyholder_Termination_Date
+    _c18: Relationship_Code
+    _c19: Dependent_Name
+    _c20: Dependent_Date_of_Birth
+    _c21: Dependent_SSN
+    _c22: Dependent_Sex
+    _c23: Dependent_Effective_Date
+    _c24: Dependent_Termination_Date

@@ -1,0 +1,22 @@
+- set:
+    relationship_code: |
+      CASE
+        WHEN Relationship_to_Policy_Holder = '0'
+          THEN '21'
+        WHEN Relationship_to_Policy_Holder = '1'
+          THEN '18'
+        WHEN Relationship_to_Policy_Holder = '2'
+          THEN '01'
+        WHEN Relationship_to_Policy_Holder = '3'
+          THEN '19'
+        WHEN Relationship_to_Policy_Holder = '4'
+          THEN '21'
+        WHEN Relationship_to_Policy_Holder = '5'
+          THEN '19'
+        WHEN Relationship_to_Policy_Holder = '6'
+          THEN '21'
+        WHEN Relationship_to_Policy_Holder = '7'
+          THEN '21'
+        WHEN Relationship_to_Policy_Holder = '8'
+          THEN 'G8'
+      END as relationship_code
